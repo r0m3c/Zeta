@@ -11,6 +11,15 @@
 		B45E6323274A158F00E32A72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6322274A158F00E32A72 /* ContentView.swift */; };
 		B45E6325274A159000E32A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E6324274A159000E32A72 /* Assets.xcassets */; };
 		B45E6328274A159000E32A72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E6327274A159000E32A72 /* Preview Assets.xcassets */; };
+		B45E6333274A293600E32A72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45E6332274A293600E32A72 /* LaunchScreen.storyboard */; };
+		B45E633D274B3EB800E32A72 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E633C274B3EB800E32A72 /* Extensions.swift */; };
+		B45E6341274B3FC500E32A72 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6340274B3FC500E32A72 /* FeedView.swift */; };
+		B45E6344274B406F00E32A72 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6343274B406F00E32A72 /* PostView.swift */; };
+		B45E6348274B55FF00E32A72 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6347274B55FF00E32A72 /* PostModel.swift */; };
+		B45E634C274B58A800E32A72 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E634B274B58A800E32A72 /* PostArrayObject.swift */; };
+		B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E634E274B625F00E32A72 /* CommentsView.swift */; };
+		B45E6352274B64F600E32A72 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6351274B64F600E32A72 /* MessageView.swift */; };
+		B45E6355274B661000E32A72 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6354274B661000E32A72 /* CommentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		B45E6324274A159000E32A72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B45E6327274A159000E32A72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B45E6329274A159000E32A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45E6332274A293600E32A72 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B45E633C274B3EB800E32A72 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B45E6340274B3FC500E32A72 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		B45E6343274B406F00E32A72 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		B45E6347274B55FF00E32A72 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		B45E634B274B58A800E32A72 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
+		B45E634E274B625F00E32A72 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		B45E6351274B64F600E32A72 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		B45E6354274B661000E32A72 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +70,13 @@
 		B45E631F274A158F00E32A72 /* Zeta */ = {
 			isa = PBXGroup;
 			children = (
-				B45E6320274A158F00E32A72 /* ZetaApp.swift */,
-				B45E6322274A158F00E32A72 /* ContentView.swift */,
+				B45E6346274B55EB00E32A72 /* Model */,
+				B45E633B274B3EA700E32A72 /* Helpers */,
+				B45E6336274B3C5D00E32A72 /* Views */,
 				B45E6324274A159000E32A72 /* Assets.xcassets */,
 				B45E6329274A159000E32A72 /* Info.plist */,
 				B45E6326274A159000E32A72 /* Preview Content */,
+				B45E6332274A293600E32A72 /* LaunchScreen.storyboard */,
 			);
 			path = Zeta;
 			sourceTree = "<group>";
@@ -67,6 +87,53 @@
 				B45E6327274A159000E32A72 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B45E6336274B3C5D00E32A72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B45E6338274B3C7D00E32A72 /* Subviews */,
+				B45E6337274B3C6E00E32A72 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B45E6337274B3C6E00E32A72 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B45E6322274A158F00E32A72 /* ContentView.swift */,
+				B45E6320274A158F00E32A72 /* ZetaApp.swift */,
+				B45E6340274B3FC500E32A72 /* FeedView.swift */,
+				B45E634E274B625F00E32A72 /* CommentsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B45E6338274B3C7D00E32A72 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				B45E6343274B406F00E32A72 /* PostView.swift */,
+				B45E6351274B64F600E32A72 /* MessageView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		B45E633B274B3EA700E32A72 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B45E633C274B3EB800E32A72 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B45E6346274B55EB00E32A72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B45E6347274B55FF00E32A72 /* PostModel.swift */,
+				B45E634B274B58A800E32A72 /* PostArrayObject.swift */,
+				B45E6354274B661000E32A72 /* CommentModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45E6333274A293600E32A72 /* LaunchScreen.storyboard in Resources */,
 				B45E6328274A159000E32A72 /* Preview Assets.xcassets in Resources */,
 				B45E6325274A159000E32A72 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45E6341274B3FC500E32A72 /* FeedView.swift in Sources */,
+				B45E6348274B55FF00E32A72 /* PostModel.swift in Sources */,
 				B45E6323274A158F00E32A72 /* ContentView.swift in Sources */,
+				B45E6352274B64F600E32A72 /* MessageView.swift in Sources */,
+				B45E633D274B3EB800E32A72 /* Extensions.swift in Sources */,
+				B45E634C274B58A800E32A72 /* PostArrayObject.swift in Sources */,
+				B45E6344274B406F00E32A72 /* PostView.swift in Sources */,
+				B45E6355274B661000E32A72 /* CommentModel.swift in Sources */,
+				B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */,
 				B45E6321274A158F00E32A72 /* ZetaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LeandroG.Zeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LeandroG.Zeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
