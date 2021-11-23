@@ -10,13 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            FeedView(posts: PostArrayObject())
+            NavigationView {
+                FeedView(posts: PostArrayObject())
+            }
                 .tabItem {
                     Image(systemName: "book.fill")
                     Text("Feed")
                 }
             
-            Text("Screen2")
+            NavigationView {
+                BrowseView()
+            }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Browse")

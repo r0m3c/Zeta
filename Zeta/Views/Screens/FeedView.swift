@@ -11,41 +11,29 @@ struct FeedView: View {
     @ObservedObject var posts: PostArrayObject
     
     var body: some View {
-        
-        ZStack {
-            Color.MyTheme.maroonColor
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                
-                ZStack(alignment: .leading) {
-                    Color.MyTheme.maroonColor
-                        .frame(height: 50)
-                                    
-                    Text("Zeta")
-                        .foregroundColor(Color.MyTheme.goldColor)
-                        .font(.custom("SignPainter", size: 50))
-                        .padding(.leading, 13)
-                        
-                }
+        ScrollView(.vertical, showsIndicators: false) {
+            LazyVStack {
+                ForEach(posts.dataArray, id: \.self) { post in
+                    PostView(post: post, showHeaderAndFooter: true)
                     
-                ScrollView(.vertical, showsIndicators: false) {
-                    LazyVStack {
-                        ForEach(posts.dataArray, id: \.self) { post in
-                            PostView(post: post)
-                        }
-                    }
                 }
             }
-            .background(Color.MyTheme.maroonColor)
         }
+        .navigationBarTitle("Feed View")
+        .navigationBarTitleDisplayMode(.inline)
+        .background(Color.MyTheme.maroonColor)
+        .navigationBarItems(trailing:
+            Text("Zeta")
+                .font(.custom("SignPainter", size: 30))
+                .foregroundColor(Color.MyTheme.goldColor)
+            )
     }
 }
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-//        NavigationView {
-        FeedView(posts: PostArrayObject())
-//        }
+        NavigationView {
+            FeedView(posts: PostArrayObject())
+        }
     }
 }
