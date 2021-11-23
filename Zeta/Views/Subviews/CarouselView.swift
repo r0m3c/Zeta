@@ -19,7 +19,7 @@ struct CarouselView: View {
                         Image("soccer\(count)")
                             .resizable()
                             .scaledToFill()
-                            .frame(width: .infinity, height: 300)
+                            .frame(width: UIScreen.main.bounds.width, height: 300)
                             .clipShape(Rectangle())
                             .overlay(Rectangle().stroke(Color.MyTheme.goldColor, lineWidth: 5))
                             .tag(count)
