@@ -20,18 +20,23 @@ struct PostView: View {
             // MARK: HEADER
             if showHeaderAndFooter {
                 HStack {
-                    Image("soccer1")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 30, height: 30, alignment: .center)
-                        .cornerRadius(15)
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.MyTheme.goldColor, lineWidth: 2))
                     
-                    Text(post.username)
-                        .font(.callout)
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
+                    NavigationLink(
+                        destination: ProfileView(profileDisplayName: post.username, profileUserID: post.userID, isMyProfile: false),
+                        label: {
+                            Image("soccer1")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 30, height: 30, alignment: .center)
+                                .cornerRadius(15)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.MyTheme.goldColor, lineWidth: 2))
+                            
+                            Text(post.username)
+                                .font(.callout)
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                        })
                     
                     Spacer()
                     

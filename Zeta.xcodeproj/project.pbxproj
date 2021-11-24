@@ -28,6 +28,13 @@
 		B4FAFE7A274DD6FA00B0490B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE79274DD6FA00B0490B /* LottieView.swift */; };
 		B4FAFE7F274DD95100B0490B /* import.json in Resources */ = {isa = PBXBuildFile; fileRef = B4FAFE7E274DD95100B0490B /* import.json */; };
 		B4FAFE85274DDB9C00B0490B /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B4FAFE84274DDB9C00B0490B /* loading.json */; };
+		B4FAFE8A274DDEAF00B0490B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE89274DDEAF00B0490B /* ImagePicker.swift */; };
+		B4FAFE8D274DECF000B0490B /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE8C274DECF000B0490B /* PostImageView.swift */; };
+		B4FAFE90274DFB3B00B0490B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE8F274DFB3B00B0490B /* ProfileView.swift */; };
+		B4FAFE93274DFD7E00B0490B /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE92274DFD7E00B0490B /* ProfileHeaderView.swift */; };
+		B4FAFE96274E073400B0490B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE95274E073400B0490B /* SettingsView.swift */; };
+		B4FAFE99274E08AE00B0490B /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE98274E08AE00B0490B /* SettingsLabelView.swift */; };
+		B4FAFE9C274E0AD100B0490B /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE9B274E0AD100B0490B /* SettingsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +60,13 @@
 		B4FAFE79274DD6FA00B0490B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		B4FAFE7E274DD95100B0490B /* import.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = import.json; sourceTree = "<group>"; };
 		B4FAFE84274DDB9C00B0490B /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		B4FAFE89274DDEAF00B0490B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B4FAFE8C274DECF000B0490B /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
+		B4FAFE8F274DFB3B00B0490B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B4FAFE92274DFD7E00B0490B /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		B4FAFE95274E073400B0490B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B4FAFE98274E08AE00B0490B /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		B4FAFE9B274E0AD100B0490B /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,9 @@
 				B45E634E274B625F00E32A72 /* CommentsView.swift */,
 				B42FA04A274C5B55005E2658 /* BrowseView.swift */,
 				B4FAFE6E274DD02500B0490B /* UploadView.swift */,
+				B4FAFE8C274DECF000B0490B /* PostImageView.swift */,
+				B4FAFE8F274DFB3B00B0490B /* ProfileView.swift */,
+				B4FAFE95274E073400B0490B /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -135,6 +152,10 @@
 				B45E6351274B64F600E32A72 /* MessageView.swift */,
 				B42FA04D274C5E13005E2658 /* CarouselView.swift */,
 				B42FA050274CB1F1005E2658 /* ImageGridView.swift */,
+				B4FAFE89274DDEAF00B0490B /* ImagePicker.swift */,
+				B4FAFE92274DFD7E00B0490B /* ProfileHeaderView.swift */,
+				B4FAFE98274E08AE00B0490B /* SettingsLabelView.swift */,
+				B4FAFE9B274E0AD100B0490B /* SettingsRowView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -256,17 +277,24 @@
 				B45E6341274B3FC500E32A72 /* FeedView.swift in Sources */,
 				B45E6348274B55FF00E32A72 /* PostModel.swift in Sources */,
 				B4FAFE7A274DD6FA00B0490B /* LottieView.swift in Sources */,
+				B4FAFE99274E08AE00B0490B /* SettingsLabelView.swift in Sources */,
 				B45E6323274A158F00E32A72 /* ContentView.swift in Sources */,
 				B45E6352274B64F600E32A72 /* MessageView.swift in Sources */,
+				B4FAFE96274E073400B0490B /* SettingsView.swift in Sources */,
 				B45E633D274B3EB800E32A72 /* Extensions.swift in Sources */,
 				B45E634C274B58A800E32A72 /* PostArrayObject.swift in Sources */,
 				B42FA051274CB1F1005E2658 /* ImageGridView.swift in Sources */,
 				B45E6344274B406F00E32A72 /* PostView.swift in Sources */,
 				B42FA04B274C5B55005E2658 /* BrowseView.swift in Sources */,
+				B4FAFE93274DFD7E00B0490B /* ProfileHeaderView.swift in Sources */,
+				B4FAFE90274DFB3B00B0490B /* ProfileView.swift in Sources */,
 				B45E6355274B661000E32A72 /* CommentModel.swift in Sources */,
 				B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */,
 				B4FAFE6F274DD02500B0490B /* UploadView.swift in Sources */,
+				B4FAFE8A274DDEAF00B0490B /* ImagePicker.swift in Sources */,
+				B4FAFE9C274E0AD100B0490B /* SettingsRowView.swift in Sources */,
 				B42FA04E274C5E13005E2658 /* CarouselView.swift in Sources */,
+				B4FAFE8D274DECF000B0490B /* PostImageView.swift in Sources */,
 				B45E6321274A158F00E32A72 /* ZetaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

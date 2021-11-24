@@ -40,7 +40,7 @@ struct FeedView: View {
                             .font(.custom("SignPainter", size: 30))
                     }
                 }
-        }
+            }
         }
     }
 }
