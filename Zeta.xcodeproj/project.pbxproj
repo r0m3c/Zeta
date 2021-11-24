@@ -23,6 +23,7 @@
 		B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E634E274B625F00E32A72 /* CommentsView.swift */; };
 		B45E6352274B64F600E32A72 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6351274B64F600E32A72 /* MessageView.swift */; };
 		B45E6355274B661000E32A72 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6354274B661000E32A72 /* CommentModel.swift */; };
+		B4FAFE6F274DD02500B0490B /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE6E274DD02500B0490B /* UploadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B45E634E274B625F00E32A72 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		B45E6351274B64F600E32A72 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		B45E6354274B661000E32A72 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		B4FAFE6E274DD02500B0490B /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B45E6340274B3FC500E32A72 /* FeedView.swift */,
 				B45E634E274B625F00E32A72 /* CommentsView.swift */,
 				B42FA04A274C5B55005E2658 /* BrowseView.swift */,
+				B4FAFE6E274DD02500B0490B /* UploadView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				B42FA04B274C5B55005E2658 /* BrowseView.swift in Sources */,
 				B45E6355274B661000E32A72 /* CommentModel.swift in Sources */,
 				B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */,
+				B4FAFE6F274DD02500B0490B /* UploadView.swift in Sources */,
 				B42FA04E274C5E13005E2658 /* CarouselView.swift in Sources */,
 				B45E6321274A158F00E32A72 /* ZetaApp.swift in Sources */,
 			);
