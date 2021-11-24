@@ -10,25 +10,19 @@ import SwiftUI
 struct UploadView: View {
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: 0) {
                 Button(action: {
                     
                 }, label: {
-                    Text("Take photo".uppercased())
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.MyTheme.maroonColor)
+                    LottieView(animationName: "loading")
                 })
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 .background(Color.MyTheme.goldColor)
                 
                 Button(action: {
-                    
+
                 }, label: {
-                    Text("import photo".uppercased())
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.MyTheme.goldColor)
+                    LottieView(animationName: "import")
                 })
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 .background(Color.MyTheme.maroonColor)
