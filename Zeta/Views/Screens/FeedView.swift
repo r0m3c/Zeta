@@ -12,22 +12,36 @@ struct FeedView: View {
     var title: String
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            LazyVStack {
-                ForEach(posts.dataArray, id: \.self) { post in
-                    PostView(post: post, showHeaderAndFooter: true)
-                    
+        ZStack {
+            Color.MyTheme.maroonColor
+                .edgesIgnoringSafeArea(.all)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVStack {
+                    ForEach(posts.dataArray, id: \.self) { post in
+                        PostView(post: post, showHeaderAndFooter: true)
+                        
+                    }
                 }
             }
+            .navigationBarTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+            .background(Color.MyTheme.maroonColor)
+            .navigationBarItems(trailing:
+                Text("Zeta")
+                    .font(.custom("SignPainter", size: 30))
+                    .foregroundColor(Color.MyTheme.goldColor)
+                )
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack(alignment: .center) {
+                        Text(title)
+                            .foregroundColor(Color.MyTheme.goldColor)
+                            .font(.custom("SignPainter", size: 30))
+                    }
+                }
         }
-        .navigationBarTitle(title)
-        .navigationBarTitleDisplayMode(.inline)
-        .background(Color.MyTheme.maroonColor)
-        .navigationBarItems(trailing:
-            Text("Zeta")
-                .font(.custom("SignPainter", size: 30))
-                .foregroundColor(Color.MyTheme.goldColor)
-            )
+        }
     }
 }
 
