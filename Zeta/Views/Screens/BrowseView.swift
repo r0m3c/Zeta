@@ -28,6 +28,18 @@ struct BrowseView: View {
                         .font(.custom("SignPainter", size: 30))
                         .foregroundColor(Color.MyTheme.goldColor)
                 )
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        HStack(alignment: .center) {
+                            Image(systemName: "magnifyingglass")
+                            
+                            Text("Browse")
+                                .foregroundColor(Color.MyTheme.goldColor)
+//                                .fontWeight(.bold)
+                                .font(.custom("SignPainter", size: 30))
+                        }
+                    }
+                }
             }
         }
     }
