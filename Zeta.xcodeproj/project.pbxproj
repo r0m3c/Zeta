@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1F2810D816E743198429028 /* Pods_Zeta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA3E7AF396A1A5AE5C0CF00 /* Pods_Zeta.framework */; };
 		B42FA04B274C5B55005E2658 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FA04A274C5B55005E2658 /* BrowseView.swift */; };
 		B42FA04E274C5E13005E2658 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FA04D274C5E13005E2658 /* CarouselView.swift */; };
 		B42FA051274CB1F1005E2658 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FA050274CB1F1005E2658 /* ImageGridView.swift */; };
@@ -23,6 +24,19 @@
 		B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E634E274B625F00E32A72 /* CommentsView.swift */; };
 		B45E6352274B64F600E32A72 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6351274B64F600E32A72 /* MessageView.swift */; };
 		B45E6355274B661000E32A72 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E6354274B661000E32A72 /* CommentModel.swift */; };
+		B4E9DFBC27519E6500B0F7FF /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9DFBB27519E6500B0F7FF /* SettingsEditTextView.swift */; };
+		B4E9DFBF2751A31B00B0F7FF /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9DFBE2751A31B00B0F7FF /* SettingsEditImageView.swift */; };
+		B4E9DFC22751ACBF00B0F7FF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9DFC12751ACBF00B0F7FF /* SignUpView.swift */; };
+		B4E9DFC52751B0C400B0F7FF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9DFC42751B0C400B0F7FF /* OnboardingView.swift */; };
+		B4E9DFC82751B21900B0F7FF /* SignInWithAppleButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9DFC72751B21900B0F7FF /* SignInWithAppleButtonCustom.swift */; };
+		B4E9DFCB2751B43100B0F7FF /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9DFCA2751B43100B0F7FF /* OnboardingViewPart2.swift */; };
+		B4E9DFCF2751BA3700B0F7FF /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9DFCE2751BA3700B0F7FF /* LikeAnimationView.swift */; };
+		B4E9DFD42751EEC300B0F7FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4E9DFD32751EEC300B0F7FF /* GoogleService-Info.plist */; };
+		B4E9E0112751F6AD00B0F7FF /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E0102751F6AD00B0F7FF /* SignInWithApple.swift */; };
+		B4E9E0162751FDBA00B0F7FF /* SignInWithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E0152751FDBA00B0F7FF /* SignInWithGoogle.swift */; };
+		B4E9E01A2752034000B0F7FF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E0192752034000B0F7FF /* AuthService.swift */; };
+		B4E9E01E27520C4A00B0F7FF /* Enums & Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E01D27520C4A00B0F7FF /* Enums & Structs.swift */; };
+		B4E9E02227520DF400B0F7FF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E02127520DF400B0F7FF /* ImageManager.swift */; };
 		B4FAFE6F274DD02500B0490B /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE6E274DD02500B0490B /* UploadView.swift */; };
 		B4FAFE75274DD68100B0490B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B4FAFE74274DD68100B0490B /* Lottie */; };
 		B4FAFE7A274DD6FA00B0490B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FAFE79274DD6FA00B0490B /* LottieView.swift */; };
@@ -38,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2361C86C54EF51E93918A0C0 /* Pods-Zeta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeta.debug.xcconfig"; path = "Target Support Files/Pods-Zeta/Pods-Zeta.debug.xcconfig"; sourceTree = "<group>"; };
+		3CC888D18A0541C4D626460A /* Pods-Zeta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeta.release.xcconfig"; path = "Target Support Files/Pods-Zeta/Pods-Zeta.release.xcconfig"; sourceTree = "<group>"; };
 		B42FA04A274C5B55005E2658 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		B42FA04D274C5E13005E2658 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		B42FA050274CB1F1005E2658 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
@@ -56,6 +72,20 @@
 		B45E634E274B625F00E32A72 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		B45E6351274B64F600E32A72 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		B45E6354274B661000E32A72 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		B4E9DFBB27519E6500B0F7FF /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
+		B4E9DFBE2751A31B00B0F7FF /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
+		B4E9DFC12751ACBF00B0F7FF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B4E9DFC42751B0C400B0F7FF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B4E9DFC72751B21900B0F7FF /* SignInWithAppleButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonCustom.swift; sourceTree = "<group>"; };
+		B4E9DFCA2751B43100B0F7FF /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
+		B4E9DFCE2751BA3700B0F7FF /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
+		B4E9DFD32751EEC300B0F7FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4E9E00C2751F62D00B0F7FF /* Zeta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zeta.entitlements; sourceTree = "<group>"; };
+		B4E9E0102751F6AD00B0F7FF /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
+		B4E9E0152751FDBA00B0F7FF /* SignInWithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogle.swift; sourceTree = "<group>"; };
+		B4E9E0192752034000B0F7FF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B4E9E01D27520C4A00B0F7FF /* Enums & Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums & Structs.swift"; sourceTree = "<group>"; };
+		B4E9E02127520DF400B0F7FF /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		B4FAFE6E274DD02500B0490B /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		B4FAFE79274DD6FA00B0490B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		B4FAFE7E274DD95100B0490B /* import.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = import.json; sourceTree = "<group>"; };
@@ -67,6 +97,7 @@
 		B4FAFE95274E073400B0490B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B4FAFE98274E08AE00B0490B /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		B4FAFE9B274E0AD100B0490B /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		CFA3E7AF396A1A5AE5C0CF00 /* Pods_Zeta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zeta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4FAFE75274DD68100B0490B /* Lottie in Frameworks */,
+				B1F2810D816E743198429028 /* Pods_Zeta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +118,8 @@
 			children = (
 				B45E631F274A158F00E32A72 /* Zeta */,
 				B45E631E274A158F00E32A72 /* Products */,
+				E72F9BFD3FD3A09DE4D297BF /* Pods */,
+				BCACD5D0515C3659FDDB55F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +134,15 @@
 		B45E631F274A158F00E32A72 /* Zeta */ = {
 			isa = PBXGroup;
 			children = (
+				B4E9E02027520DE700B0F7FF /* Utilities */,
+				B4E9E00E2751F69200B0F7FF /* Services */,
+				B4E9E00C2751F62D00B0F7FF /* Zeta.entitlements */,
 				B4FAFE78274DD6EB00B0490B /* Lottie */,
 				B45E6346274B55EB00E32A72 /* Model */,
 				B45E633B274B3EA700E32A72 /* Helpers */,
 				B45E6336274B3C5D00E32A72 /* Views */,
 				B45E6324274A159000E32A72 /* Assets.xcassets */,
+				B4E9DFD32751EEC300B0F7FF /* GoogleService-Info.plist */,
 				B45E6329274A159000E32A72 /* Info.plist */,
 				B45E6326274A159000E32A72 /* Preview Content */,
 				B45E6332274A293600E32A72 /* LaunchScreen.storyboard */,
@@ -133,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				B45E6322274A158F00E32A72 /* ContentView.swift */,
+				B4E9DFC12751ACBF00B0F7FF /* SignUpView.swift */,
 				B45E6320274A158F00E32A72 /* ZetaApp.swift */,
 				B45E6340274B3FC500E32A72 /* FeedView.swift */,
 				B45E634E274B625F00E32A72 /* CommentsView.swift */,
@@ -141,6 +180,10 @@
 				B4FAFE8C274DECF000B0490B /* PostImageView.swift */,
 				B4FAFE8F274DFB3B00B0490B /* ProfileView.swift */,
 				B4FAFE95274E073400B0490B /* SettingsView.swift */,
+				B4E9DFBB27519E6500B0F7FF /* SettingsEditTextView.swift */,
+				B4E9DFBE2751A31B00B0F7FF /* SettingsEditImageView.swift */,
+				B4E9DFC42751B0C400B0F7FF /* OnboardingView.swift */,
+				B4E9DFCA2751B43100B0F7FF /* OnboardingViewPart2.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -156,6 +199,8 @@
 				B4FAFE92274DFD7E00B0490B /* ProfileHeaderView.swift */,
 				B4FAFE98274E08AE00B0490B /* SettingsLabelView.swift */,
 				B4FAFE9B274E0AD100B0490B /* SettingsRowView.swift */,
+				B4E9DFC72751B21900B0F7FF /* SignInWithAppleButtonCustom.swift */,
+				B4E9DFCE2751BA3700B0F7FF /* LikeAnimationView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -164,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				B45E633C274B3EB800E32A72 /* Extensions.swift */,
+				B4E9E01D27520C4A00B0F7FF /* Enums & Structs.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -176,6 +222,40 @@
 				B45E6354274B661000E32A72 /* CommentModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E9E00E2751F69200B0F7FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B4E9E0182752032800B0F7FF /* Firebase */,
+				B4E9E00F2751F69A00B0F7FF /* SignInProviders */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B4E9E00F2751F69A00B0F7FF /* SignInProviders */ = {
+			isa = PBXGroup;
+			children = (
+				B4E9E0102751F6AD00B0F7FF /* SignInWithApple.swift */,
+				B4E9E0152751FDBA00B0F7FF /* SignInWithGoogle.swift */,
+			);
+			path = SignInProviders;
+			sourceTree = "<group>";
+		};
+		B4E9E0182752032800B0F7FF /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B4E9E0192752034000B0F7FF /* AuthService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B4E9E02027520DE700B0F7FF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B4E9E02127520DF400B0F7FF /* ImageManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		B4FAFE78274DD6EB00B0490B /* Lottie */ = {
@@ -196,6 +276,23 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		BCACD5D0515C3659FDDB55F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFA3E7AF396A1A5AE5C0CF00 /* Pods_Zeta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E72F9BFD3FD3A09DE4D297BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2361C86C54EF51E93918A0C0 /* Pods-Zeta.debug.xcconfig */,
+				3CC888D18A0541C4D626460A /* Pods-Zeta.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B45E632C274A159000E32A72 /* Build configuration list for PBXNativeTarget "Zeta" */;
 			buildPhases = (
+				58312295931774A3AE2D050A /* [CP] Check Pods Manifest.lock */,
 				B45E6319274A158F00E32A72 /* Sources */,
 				B45E631A274A158F00E32A72 /* Frameworks */,
 				B45E631B274A158F00E32A72 /* Resources */,
+				51A6E128ECA5F2699B2C2240 /* [CP] Embed Pods Frameworks */,
+				952117889C90F765A2832892 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,10 +364,70 @@
 				B4FAFE7F274DD95100B0490B /* import.json in Resources */,
 				B45E6325274A159000E32A72 /* Assets.xcassets in Resources */,
 				B4FAFE85274DDB9C00B0490B /* loading.json in Resources */,
+				B4E9DFD42751EEC300B0F7FF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51A6E128ECA5F2699B2C2240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeta/Pods-Zeta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeta/Pods-Zeta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zeta/Pods-Zeta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58312295931774A3AE2D050A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zeta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		952117889C90F765A2832892 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeta/Pods-Zeta-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeta/Pods-Zeta-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zeta/Pods-Zeta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B45E6319274A158F00E32A72 /* Sources */ = {
@@ -275,27 +435,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45E6341274B3FC500E32A72 /* FeedView.swift in Sources */,
+				B4E9E02227520DF400B0F7FF /* ImageManager.swift in Sources */,
 				B45E6348274B55FF00E32A72 /* PostModel.swift in Sources */,
 				B4FAFE7A274DD6FA00B0490B /* LottieView.swift in Sources */,
+				B4E9DFC82751B21900B0F7FF /* SignInWithAppleButtonCustom.swift in Sources */,
 				B4FAFE99274E08AE00B0490B /* SettingsLabelView.swift in Sources */,
 				B45E6323274A158F00E32A72 /* ContentView.swift in Sources */,
+				B4E9DFBC27519E6500B0F7FF /* SettingsEditTextView.swift in Sources */,
 				B45E6352274B64F600E32A72 /* MessageView.swift in Sources */,
 				B4FAFE96274E073400B0490B /* SettingsView.swift in Sources */,
 				B45E633D274B3EB800E32A72 /* Extensions.swift in Sources */,
+				B4E9E0112751F6AD00B0F7FF /* SignInWithApple.swift in Sources */,
+				B4E9E01E27520C4A00B0F7FF /* Enums & Structs.swift in Sources */,
 				B45E634C274B58A800E32A72 /* PostArrayObject.swift in Sources */,
 				B42FA051274CB1F1005E2658 /* ImageGridView.swift in Sources */,
+				B4E9DFC52751B0C400B0F7FF /* OnboardingView.swift in Sources */,
 				B45E6344274B406F00E32A72 /* PostView.swift in Sources */,
+				B4E9E01A2752034000B0F7FF /* AuthService.swift in Sources */,
 				B42FA04B274C5B55005E2658 /* BrowseView.swift in Sources */,
 				B4FAFE93274DFD7E00B0490B /* ProfileHeaderView.swift in Sources */,
 				B4FAFE90274DFB3B00B0490B /* ProfileView.swift in Sources */,
 				B45E6355274B661000E32A72 /* CommentModel.swift in Sources */,
+				B4E9DFC22751ACBF00B0F7FF /* SignUpView.swift in Sources */,
 				B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */,
 				B4FAFE6F274DD02500B0490B /* UploadView.swift in Sources */,
 				B4FAFE8A274DDEAF00B0490B /* ImagePicker.swift in Sources */,
+				B4E9DFBF2751A31B00B0F7FF /* SettingsEditImageView.swift in Sources */,
 				B4FAFE9C274E0AD100B0490B /* SettingsRowView.swift in Sources */,
 				B42FA04E274C5E13005E2658 /* CarouselView.swift in Sources */,
 				B4FAFE8D274DECF000B0490B /* PostImageView.swift in Sources */,
 				B45E6321274A158F00E32A72 /* ZetaApp.swift in Sources */,
+				B4E9DFCB2751B43100B0F7FF /* OnboardingViewPart2.swift in Sources */,
+				B4E9E0162751FDBA00B0F7FF /* SignInWithGoogle.swift in Sources */,
+				B4E9DFCF2751BA3700B0F7FF /* LikeAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +592,11 @@
 		};
 		B45E632D274A159000E32A72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2361C86C54EF51E93918A0C0 /* Pods-Zeta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zeta/Zeta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Zeta/Preview Content\"";
@@ -443,9 +617,11 @@
 		};
 		B45E632E274A159000E32A72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC888D18A0541C4D626460A /* Pods-Zeta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zeta/Zeta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"Zeta/Preview Content\"";
