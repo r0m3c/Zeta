@@ -25,11 +25,13 @@ struct SettingsRowView: View {
             .frame(width: 35, height: 36)
             
             Text(text)
+                .foregroundColor(Color.MyTheme.goldColor)
             
             Spacer()
             
             Image(systemName: "chevron.right")
                 .font(.headline)
+                .foregroundColor(Color.MyTheme.goldColor)
         }
         .padding(.vertical, 4)
     }

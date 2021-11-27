@@ -12,6 +12,7 @@ struct ProfileView: View {
     @State var profileDisplayName: String
     var profileUserID: String
     var isMyProfile: Bool
+    @State var showSettings: Bool = false
     
     var body: some View {
         ZStack {
@@ -29,9 +30,9 @@ struct ProfileView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing:
                                     Button(action: {
-                                        
+                                        showSettings.toggle()
                                     }, label: {
-                                        Image(systemName: "line.horizontal.3")
+                                        Image(systemName: "gearshape.fill")
                                             .accentColor(Color.MyTheme.goldColor)
                                             .opacity(isMyProfile ? 1.0 : 0.0)
                                     })
@@ -45,7 +46,10 @@ struct ProfileView: View {
                             .font(.custom("SignPainter", size: 30))
                     }
                 }
-        }
+            }
+            .sheet(isPresented: $showSettings, content: {
+                SettingsView()
+            })
         }
     }
 }
