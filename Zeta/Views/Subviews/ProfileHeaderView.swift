@@ -12,6 +12,7 @@ struct ProfileHeaderView: View {
     @Binding var profileImage: UIImage
     
     @ObservedObject var postArray: PostArrayObject
+    @Binding var profileBio: String
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
@@ -30,11 +31,13 @@ struct ProfileHeaderView: View {
                 .foregroundColor(.white)
             
             // MARK: BIO
-            Text("This is the are where the user can add a bio to their profile")
-                .font(.body)
-                .fontWeight(.regular)
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
+            if profileBio != "" {
+                Text(profileBio)
+                    .font(.body)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+            }
             
             // MARK: POSTS
             HStack(alignment: .center, spacing: 20) {
@@ -84,7 +87,7 @@ struct ProfileHeaderView_Previews: PreviewProvider {
     @State static var image: UIImage = UIImage(named: "soccer1")!
     
     static var previews: some View {
-        ProfileHeaderView(profileDisplayName: $name, profileImage: $image, postArray: PostArrayObject(shuffled: false))
+        ProfileHeaderView(profileDisplayName: $name, profileImage: $image, postArray: PostArrayObject(shuffled: false), profileBio: $name)
             .previewLayout(.sizeThatFits)
             .background(Color.red)
     }
