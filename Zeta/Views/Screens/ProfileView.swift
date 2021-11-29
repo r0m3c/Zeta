@@ -11,6 +11,7 @@ struct ProfileView: View {
     var posts: PostArrayObject
     @State var profileDisplayName: String
     var profileUserID: String
+    @State var profileBio: String = ""
     @State var profileImage: UIImage = UIImage(named: "logo.loading")!
     
     var isMyProfile: Bool
@@ -22,7 +23,7 @@ struct ProfileView: View {
                 .edgesIgnoringSafeArea(.top)
             
             ScrollView {
-                ProfileHeaderView(profileDisplayName: $profileDisplayName, profileImage: $profileImage, postArray: posts)
+                ProfileHeaderView(profileDisplayName: $profileDisplayName, profileImage: $profileImage, postArray: posts, profileBio: $profileBio)
                 
                 Divider()
                 
@@ -51,9 +52,10 @@ struct ProfileView: View {
             }
             .onAppear(perform: {
                 getProfileImage()
+                getAdditionalProfileInfo()
             })
             .sheet(isPresented: $showSettings, content: {
-                SettingsView()
+                SettingsView(userDisplayName: $profileDisplayName, userBio: $profileBio, userProfilePicture: $profileImage)
             })
         }
     }
@@ -63,6 +65,18 @@ struct ProfileView: View {
         ImageManager.instance.downloadProfileImage(userID: profileUserID) { (returnedImage) in
             if let image = returnedImage {
                 self.profileImage = image
+            }
+        }
+    }
+    
+    func getAdditionalProfileInfo() {
+        AuthService.instance.getUserInfo(forUserID: profileUserID) { (returnedDisplayName, returnedBio) in
+            if let displayName = returnedDisplayName {
+                self.profileDisplayName = displayName
+            }
+            
+            if let bio = returnedBio {
+                self.profileBio = bio
             }
         }
     }
