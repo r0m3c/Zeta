@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     @Binding var profileDisplayName: String
+    @Binding var profileImage: UIImage
+    
+    @ObservedObject var postArray: PostArrayObject
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             // MARK: PROFILE PICTURE
-            Image("soccer1")
+            Image(uiImage: profileImage)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 120, height: 120)
@@ -36,7 +39,7 @@ struct ProfileHeaderView: View {
             // MARK: POSTS
             HStack(alignment: .center, spacing: 20) {
                 VStack(alignment: .center, spacing: 5) {
-                    Text("5")
+                    Text(postArray.postCountString)
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -54,7 +57,7 @@ struct ProfileHeaderView: View {
                 // MARK: Likes
                 HStack(alignment: .center, spacing: 20) {
                     VStack(alignment: .center, spacing: 5) {
-                        Text("20")
+                        Text(postArray.likeCountString)
                             .font(.title2)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
@@ -69,7 +72,6 @@ struct ProfileHeaderView: View {
                             .foregroundColor(.white)
                     }
                 }
-
             }
         }
         .frame(maxWidth: .infinity)
@@ -79,8 +81,10 @@ struct ProfileHeaderView: View {
 
 struct ProfileHeaderView_Previews: PreviewProvider {
     @State static var name: String = "Joe"
+    @State static var image: UIImage = UIImage(named: "soccer1")!
+    
     static var previews: some View {
-        ProfileHeaderView(profileDisplayName: $name)
+        ProfileHeaderView(profileDisplayName: $name, profileImage: $image, postArray: PostArrayObject(shuffled: false))
             .previewLayout(.sizeThatFits)
             .background(Color.red)
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B1F2810D816E743198429028 /* Pods_Zeta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA3E7AF396A1A5AE5C0CF00 /* Pods_Zeta.framework */; };
+		B4149F14275426560029723B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4149F13275426560029723B /* DataService.swift */; };
+		B4149F17275477CB0029723B /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4149F16275477CB0029723B /* LazyView.swift */; };
 		B42FA04B274C5B55005E2658 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FA04A274C5B55005E2658 /* BrowseView.swift */; };
 		B42FA04E274C5E13005E2658 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FA04D274C5E13005E2658 /* CarouselView.swift */; };
 		B42FA051274CB1F1005E2658 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FA050274CB1F1005E2658 /* ImageGridView.swift */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		2361C86C54EF51E93918A0C0 /* Pods-Zeta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeta.debug.xcconfig"; path = "Target Support Files/Pods-Zeta/Pods-Zeta.debug.xcconfig"; sourceTree = "<group>"; };
 		3CC888D18A0541C4D626460A /* Pods-Zeta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeta.release.xcconfig"; path = "Target Support Files/Pods-Zeta/Pods-Zeta.release.xcconfig"; sourceTree = "<group>"; };
+		B4149F13275426560029723B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B4149F16275477CB0029723B /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		B42FA04A274C5B55005E2658 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		B42FA04D274C5E13005E2658 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		B42FA050274CB1F1005E2658 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			children = (
 				B45E633C274B3EB800E32A72 /* Extensions.swift */,
 				B4E9E01D27520C4A00B0F7FF /* Enums & Structs.swift */,
+				B4149F16275477CB0029723B /* LazyView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E9E0192752034000B0F7FF /* AuthService.swift */,
+				B4149F13275426560029723B /* DataService.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -458,11 +464,13 @@
 				B45E6355274B661000E32A72 /* CommentModel.swift in Sources */,
 				B4E9DFC22751ACBF00B0F7FF /* SignUpView.swift in Sources */,
 				B45E634F274B625F00E32A72 /* CommentsView.swift in Sources */,
+				B4149F17275477CB0029723B /* LazyView.swift in Sources */,
 				B4FAFE6F274DD02500B0490B /* UploadView.swift in Sources */,
 				B4FAFE8A274DDEAF00B0490B /* ImagePicker.swift in Sources */,
 				B4E9DFBF2751A31B00B0F7FF /* SettingsEditImageView.swift in Sources */,
 				B4FAFE9C274E0AD100B0490B /* SettingsRowView.swift in Sources */,
 				B42FA04E274C5E13005E2658 /* CarouselView.swift in Sources */,
+				B4149F14275426560029723B /* DataService.swift in Sources */,
 				B4FAFE8D274DECF000B0490B /* PostImageView.swift in Sources */,
 				B45E6321274A158F00E32A72 /* ZetaApp.swift in Sources */,
 				B4E9DFCB2751B43100B0F7FF /* OnboardingViewPart2.swift in Sources */,

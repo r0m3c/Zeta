@@ -20,26 +20,78 @@ class AuthService {
     private var REF_USERS = DB_BASE.collection("users")
     
     // MARK: AUTH USER FUNCTIONS
-    func logInUserToFirebase(credential: AuthCredential, handler: @escaping (_ providerID: String?, _ isError: Bool) -> ()) {
+    func logInUserToFirebase(credential: AuthCredential, handler: @escaping (_ providerID: String?, _ isError: Bool, _ isNewUser: Bool?, _ userID: String?) -> ()) {
         Auth.auth().signIn(with: credential) { (result, error) in
             // Check for errors
             if error != nil {
                 print("Error logging into Firebase")
-                handler(nil, true)
+                handler(nil, true, nil, nil)
                 return
             }
             
             // Check for provider ID
             guard let providerID = result?.user.uid else {
                 print("Error getting provider ID")
-                handler(nil, true)
+                handler(nil, true, nil, nil)
                 return
             }
             
-            // Success connecting to Firebase
-            handler(providerID, false)
+            self.checkIfUserExistsInDatabase(providerID: providerID) { (returnedUserID) in
+                if let userID = returnedUserID {
+                    // User exists, log in to app immediately
+                    handler(providerID, false, false, userID)
+                    
+                } else {
+                    // User does not exist, continue to onboarding
+                    handler(providerID, false, true, nil)
+                    
+                }
+            }
+        }
+    }
+    
+    func logInUserToApp(userID: String, handler: @escaping (_ success: Bool) -> ()) {
+        // Get the users info
+        getUserInfo(forUserID: userID) { (returnedName, returnedBio) in
+            if let name = returnedName, let bio = returnedBio {
+                // SUCCESS
+                print("Success getting user info while logging in")
+                handler(true)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    // Set the users info into our app
+                    UserDefaults.standard.set(userID, forKey: CurrentUserDefaults.userID)
+                    UserDefaults.standard.set(bio, forKey: CurrentUserDefaults.bio)
+                    UserDefaults.standard.set(name, forKey: CurrentUserDefaults.displayName)
+                }
+                
+            } else {
+                // ERROR
+                print("Error getting user info while logging in")
+                handler(false)
+            }
+        }
+    }
+    
+    func logOutUser(handler: @escaping(_ success: Bool) -> ()) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print("Error. \(error)")
+            handler(false)
+            return
         }
         
+        handler(true)
+        
+        // Update our Userdefaults
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            
+            let defaultsDictionary = UserDefaults.standard.dictionaryRepresentation()
+            defaultsDictionary.keys.forEach { (key) in
+                UserDefaults.standard.removeObject(forKey: key)
+            }
+        }
     }
     
     func createNewUserInDatabase(name: String, email: String, providerID: String, provider: String, profileImage: UIImage, handler: @escaping (_ userID: String?) -> ()) {
@@ -72,5 +124,39 @@ class AuthService {
             }
         }
         
+    }
+    
+    private func checkIfUserExistsInDatabase(providerID: String, handler: @escaping (_ existingUserID: String?) -> ()) {
+        // If a userID is returned then a user does exist in database
+        REF_USERS.whereField(DatabaseUserField.providerID, isEqualTo: providerID).getDocuments { (querySnapshot, error) in
+            // SUCCESS
+            if let snapshot = querySnapshot, snapshot.count > 0, let document = snapshot.documents.first {
+                let existingUserID = document.documentID
+                handler(existingUserID)
+                return
+            } else {
+                // ERROR, NEW USER
+                handler(nil)
+                return
+            }
+        }
+    }
+    
+    // MARK: GET USER FUNCTIONS
+    func getUserInfo(forUserID userID: String, handler: @escaping (_ name: String?, _ bio: String?) -> ()) {
+        REF_USERS.document(userID).getDocument { (documentSnapshot, error) in
+            if let document = documentSnapshot,
+               let name = document.get(DatabaseUserField.displayName) as? String,
+               let bio = document.get(DatabaseUserField.bio) as? String {
+                
+                print("Success getting user info")
+                handler(name, bio)
+                return
+            } else {
+                print("Error getting user info")
+                handler(nil,nil)
+                return
+            }
+        }
     }
 }
