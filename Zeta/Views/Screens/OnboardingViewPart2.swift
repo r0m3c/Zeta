@@ -21,6 +21,8 @@ struct OnboardingViewPart2: View {
     
     @State var showError: Bool = false
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             Text("What's your name?")
@@ -74,7 +76,21 @@ struct OnboardingViewPart2: View {
         AuthService.instance.createNewUserInDatabase(name: displayName, email: email, providerID: providerID, provider: provider, profileImage: imageSelected) { (returnedUserID) in
             if let userID = returnedUserID {
                 // SUCCESS
+                print("Successfully created new user in database")
                 
+                AuthService.instance.logInUserToApp(userID: userID) { (success) in
+                    if success {
+                        print("User logged in")
+                        // return to app
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }
+                        
+                    } else {
+                        print("Error logging in")
+                        self.showError.toggle()
+                    }
+                }
                 
             } else {
                 // ERROR

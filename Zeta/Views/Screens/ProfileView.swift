@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ProfileView: View {
-    var posts = PostArrayObject()
+    var posts: PostArrayObject
     @State var profileDisplayName: String
     var profileUserID: String
+    @State var profileImage: UIImage = UIImage(named: "logo.loading")!
+    
     var isMyProfile: Bool
     @State var showSettings: Bool = false
     
@@ -20,7 +22,7 @@ struct ProfileView: View {
                 .edgesIgnoringSafeArea(.top)
             
             ScrollView {
-                ProfileHeaderView(profileDisplayName: $profileDisplayName)
+                ProfileHeaderView(profileDisplayName: $profileDisplayName, profileImage: $profileImage, postArray: posts)
                 
                 Divider()
                 
@@ -47,9 +49,21 @@ struct ProfileView: View {
                     }
                 }
             }
+            .onAppear(perform: {
+                getProfileImage()
+            })
             .sheet(isPresented: $showSettings, content: {
                 SettingsView()
             })
+        }
+    }
+    
+    // MARK: FUNCTIONS
+    func getProfileImage() {
+        ImageManager.instance.downloadProfileImage(userID: profileUserID) { (returnedImage) in
+            if let image = returnedImage {
+                self.profileImage = image
+            }
         }
     }
 }
@@ -57,7 +71,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ProfileView(profileDisplayName: "Joe", profileUserID: "", isMyProfile: true)
+            ProfileView(posts: PostArrayObject(userID: ""), profileDisplayName: "Joe", profileUserID: "", isMyProfile: true)
         }
     }
 }

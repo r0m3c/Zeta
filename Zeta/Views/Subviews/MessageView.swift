@@ -9,16 +9,25 @@ import SwiftUI
 
 struct MessageView: View {
     @State var comment: CommentModel
+    @State var profilePicture: UIImage = UIImage(named: "logo.loading")!
     
     var body: some View {
         HStack {
             
             // MARK: PROFILE IMAGE
-            Image("soccer1")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40, alignment: .center)
-                .cornerRadius(20)
+            NavigationLink(
+                destination: LazyView(content: {
+                    ProfileView(posts: PostArrayObject(userID: comment.userID), profileDisplayName: comment.username, profileUserID: comment.userID, isMyProfile: false)
+                })) {
+                
+                Image(uiImage: profilePicture)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40, alignment: .center)
+                    .cornerRadius(20)
+            }
+               
+            
             
             VStack(alignment: .leading, spacing: 4) {
                 
@@ -38,6 +47,18 @@ struct MessageView: View {
             Spacer(minLength: 0)
         }
         .padding(.leading)
+        .onAppear {
+            getProfileImage()
+        }
+    }
+    
+    // MARK: FUNCTIONS
+    func getProfileImage() {
+        ImageManager.instance.downloadProfileImage(userID: comment.userID) { (returnedImage) in
+            if let image = returnedImage {
+                self.profilePicture = image
+            }
+        }
     }
 }
 
