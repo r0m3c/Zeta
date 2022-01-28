@@ -50,64 +50,63 @@ Below is the Figma Design that I started from scratch as I thought of features t
 ## App Features
 
 ### Profile View
-- <b>Profile View</b>: is used as the users very own Profile page.
-        - Let's first begin with signing into the app, via Google:
-            - <img src= "https://i.imgur.com/cYMNjPT.gif" style="width: 200px; height 200px;">
-        - Next, the user is also able to sign in via Apple, but I'm not able to display it here, because Apple Sign In isn't allowed via a Simulator
-        - Next, after signing in, the user will be able to see their profile picture, profile bio description, see how many posts they have, how many people liked their posts, and will have a Settings button, which I'll go into in a second.
-            - <img src= "https://i.imgur.com/00UoyI2.gif" style="width: 200px; height 200px;">
-        - Settings Page: at the top right in the Profile view, the user will be able to click on it, and in their they will have many options, which include changing their bio name, bio description, uploading a new profile image, signing out and much more.
-            - <img src= "https://i.imgur.com/Kt0FHj1.gif" style="width: 200px; height 200px;">
+- <b>Profile View</b>: is used as the users very own Profile page. <br>
+        - Let's first begin with signing into the app, via Google: <br>
+            - <img src= "https://i.imgur.com/cYMNjPT.gif" style="width: 200px; height 200px;"> <br>
+        - Next, the user is also able to sign in via Apple, but I'm not able to display it here, because Apple Sign In isn't allowed via a Simulator. <br>
+        - Next, after signing in, the user will be able to see their profile picture, profile bio description, see how many posts they have, how many people liked their posts, and will have a Settings button, which I'll go into in a second. <br>
+            - <img src= "https://i.imgur.com/00UoyI2.gif" style="width: 200px; height 200px;"> <br>
+        - Settings Page: at the top right in the Profile view, the user will be able to click on it, and in their they will have many options, which include changing their bio name, bio description, uploading a new profile image, signing out and much more. <br>
+            - <img src= "https://i.imgur.com/Kt0FHj1.gif" style="width: 200px; height 200px;"> <br>
 
 
 ### Feed View
-- <b>Feed View</b>: used as the main page of the app.
-        - Here is a quick view of the Feed View:
-            - <img src="https://i.imgur.com/ZCv8KD0.gif" alt="drawing" style="width: 200px; height 200px;"/>
-        - Next, the user will be able to comment on another users post and Firebase will instantly download/save/and post the comment.
-            - <img src="https://i.imgur.com/3ZyIXQA.gif" alt="drawing" style="width: 200px; height 200px;"/>
-        - Moreover, the user also has the ability to click on another user's name and look at their profile.
-            - <img src="https://i.imgur.com/szGmzg2.gif
-" alt="drawing" style="width: 200px; height 200px;"/>
-        - Furthermore, the user will also be able to share any posts with their friends, as well as liking the photo.
-            - <img src="https://i.imgur.com/COtfERy.gif" alt="drawing" style="width: 200px; height 200px;"/>
-        - Lastly, the user will also be able to report a users post if it is innapropriate. This report will be sent to my Firebase Database.
-            - <img src="https://i.imgur.com/uplXOAH.gif" alt="drawing" style="width: 200px; height 200px;"/>
+- <b>Feed View</b>: used as the main page of the app. <br>
+        - Here is a quick view of the Feed View: <br>
+            - <img src="https://i.imgur.com/ZCv8KD0.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
+        - Next, the user will be able to comment on another users post and Firebase will instantly download/save/and post the comment. <br>
+            - <img src="https://i.imgur.com/3ZyIXQA.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
+        - Moreover, the user also has the ability to click on another user's name and look at their profile. <br>
+            - <img src="https://i.imgur.com/szGmzg2.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
+        - Furthermore, the user will also be able to share any posts with their friends, as well as liking the photo. <br>
+            - <img src="https://i.imgur.com/COtfERy.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
+        - Lastly, the user will also be able to report a users post if it is innapropriate. This report will be sent to my Firebase Database. <br>
+            - <img src="https://i.imgur.com/uplXOAH.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
             
-- <b>Search View</b>: Discover new posts.
-        - The user will be able to discover new posts by anyone who uses the application.
-            - <img src="https://i.imgur.com/PbSEwR3.gif" alt="drawing" style="width: 200px; height 200px;"/>
+- <b>Search View</b>: Discover new posts. <br>
+        - The user will be able to discover new posts by anyone who uses the application. <br>
+            - <img src="https://i.imgur.com/PbSEwR3.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
 
 ### Upload View
-- <b>Upload View</b>: Upload a new post to the Feed View and database.
-        - The user can upload a photo directly from their photo library. Afterwards, the user will be able to edit and enter a description to that chosen photo.
-            - <img src="https://i.imgur.com/hBQvyh7.gif" alt="drawing" style="width: 200px; height 200px;"/>
-        - Here is the uploaded image.
-                - <img src="https://i.imgur.com/0sIwSZf.gif" alt="drawing" style="width: 200px; height 200px;"/>
+- <b>Upload View</b>: Upload a new post to the Feed View and database. <br>
+        - The user can upload a photo directly from their photo library. Afterwards, the user will be able to edit and enter a description to that chosen photo. <br>
+            - <img src="https://i.imgur.com/hBQvyh7.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
+        - Here is the uploaded image. <br>
+                - <img src="https://i.imgur.com/0sIwSZf.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
 
 ### Sign Out
-- <b>Sign Out</b>: To sum up, all the data in the app will be saved through my Firebase Database and all the information will be uploaded/downloaded.
-        - <img src="https://i.imgur.com/iXjncSp.gif" alt="drawing" style="width: 200px; height 200px;"/>
+- <b>Sign Out</b>: To sum up, all the data in the app will be saved through my Firebase Database and all the information will be uploaded/downloaded. <br>
+        - <img src="https://i.imgur.com/iXjncSp.gif" alt="drawing" style="width: 200px; height 200px;"/> <br>
 
 
 ## Firebase Database
 
 ### Authentication
-- Here you can get a view of the Firebase Database, but more specifically, the current users who have signed into the app and have an account. 
+- Here you can get a view of the Firebase Database, but more specifically, the current users who have signed into the app and have an account. <br>
         - <img src="https://i.imgur.com/Y9I5awT.png" style="width: 600px; height: 300px">
 
 ### Saved Data
-- <b>Posts</b>: Here you can see all the saved posts that users have posted in the app.
+- <b>Posts</b>: Here you can see all the saved posts that users have posted in the app.<br>
         - <img src="https://i.imgur.com/ZhFMqx0.png" style="width: 600px; height: 300px">
 
-- <b>Reports</b>: Here you can see all the saved reports that users have reported in the app.
+- <b>Reports</b>: Here you can see all the saved reports that users have reported in the app.<br>
         - <img src="https://i.imgur.com/j2e2AhV.png" style="width: 600px; height: 300px">
 
-- <b>Users</b>: Here you can see all the saved users that have signed up in the app.
+- <b>Users</b>: Here you can see all the saved users that have signed up in the app.<br>
         - <img src="https://i.imgur.com/z4SmT2w.png" style="width: 600px; height: 300px">
 
 ### Storage
-- <b>Storage</b>: Here you can see where all images that are uploaded by users and the posts are stored.
+- <b>Storage</b>: Here you can see where all images that are uploaded by users and the posts are stored.<br>
         - ![](https://i.imgur.com/MhBz4jw.gif)
 
 ## Future Features
